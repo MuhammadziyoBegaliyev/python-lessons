@@ -96,8 +96,11 @@
 
 # 12- vazifa 
 
-son = int(input("Istagan soningizni kiriting :"))
-if son%2 == 0 :
-    print(f"Bu son Juft sondur {son}!")
-else:
-    print("bu son toq son ")
+# son = int(input("Istagan soningizni kiriting :"))
+# if son%2 == 0 :
+#     print(f"Bu son Juft sondur {son}!")
+# else:
+#     print("bu son toq son ")
+
+
+# 
