@@ -1,1 +1,1 @@
-son = int(input("Juft son kirirting ="0))
+son = int(input("Juft son kirirting ="))
