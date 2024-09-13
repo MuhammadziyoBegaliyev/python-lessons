@@ -94,7 +94,13 @@
 #     print(f"{son}  bu son qoldiqsiz bolinadi{9}")    
 # else :
 #     print(f"bu {son}bu ayrim songa qoldiqsiz bolinmidi")
+
+
+
 # 7- vazifa abrazes
+
+
+
 son = int(input("Istalgan son kirirting  ="))
 for n in range(2,10):
     if not (son%n):
