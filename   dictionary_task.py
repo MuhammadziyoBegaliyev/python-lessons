@@ -30,10 +30,14 @@
 # print(python)
 
 # 4 -task
-word = str(input("Enter word ="))
-dictionary ={'apple':'olma','banana':'banan','apricot':'shaftoli'}
-tarjima = dictionary.get(word)
-if tarjima == None :
-    print("don\`t have this word")
-else :
-    print(f"{word.title()}sozi {tarjima}qilinadi")
+# word = str(input("Enter word ="))
+# dictionary ={'apple':'olma','banana':'banan','apricot':'shaftoli'}
+# tarjima = dictionary.get(word)
+# if tarjima == None :
+#     print("don\`t have this word")
+# else :
+#     print(f"{word.title()}   sozi {tarjima} deb qilinadi")
+# 
+
+
+
