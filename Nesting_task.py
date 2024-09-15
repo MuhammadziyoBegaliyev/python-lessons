@@ -111,12 +111,19 @@
 # print(film_all.items)
 
 
-film_12= {
-    'doston':{input(f"{1}--- enter favorite carton and film")},
-    'ozodbek':{input(f"{1}--- enter favorite carton and film")    },
-    'anvar':{input(f"{1}--- enter favorite carton and film")}
-}
+# film_12= {
+#     'doston':{input(f"{1}--- enter favorite carton and film")},
+#     'ozodbek':{input(f"{1}--- enter favorite carton and film")    },
+#     'anvar':{input(f"{1}--- enter favorite carton and film")}
+# }
 
 
-print(film_12.items())
+# print(film_12.items())
    
+
+
+davlatlar ={
+    'Ozbekiston':['1991-yil mustaqil bolgan','1- prizdenti I.A.Karimov'],
+    'Qozogiston':['17ta viloyat','1920 -yil mustaqil bolgan ']
+}
+print(davlatlar.items())
