@@ -61,10 +61,11 @@ savol += "(Dasturni to`xtatish uchun 'exit deb yozing ):"
 while True :
     qiymat = input(savol)
     
-    if qiymat>0:
-        continue 
-    elif qiymat == 'exit':
+    if qiymat == 'exit':
         break
+        
+    elif float(qiymat) == 'exit':
+        continue
     else :
         ildiz = float(qiymat)*(0.5)
         print(f"{qiymat}ning ildizi {ildiz}ga teng")
