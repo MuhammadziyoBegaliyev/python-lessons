@@ -126,4 +126,10 @@ davlatlar ={
     'Ozbekiston':['1991-yil mustaqil bolgan','1- prizdenti I.A.Karimov'],
     'Qozogiston':['17ta viloyat','1920 -yil mustaqil bolgan ']
 }
-print(davlatlar.items())
+davlat = input('Istalgan davlatingizni kiriting ---')
+for davlat in davlatlar.items():
+    if davlat in davlatlar :
+        print(davlat)
+    else:
+        print('bizda bundey davlat yoq')
+# print(davlatlar.items())
