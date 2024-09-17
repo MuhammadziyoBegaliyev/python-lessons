@@ -8,5 +8,3 @@ students = {
 bal = students.values()
 for ball in bal :
     print(float(sum(ball))//3)
-# ball = students['Ali']
-# print(sum(ball)//3)
