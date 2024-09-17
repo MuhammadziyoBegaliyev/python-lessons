@@ -23,3 +23,8 @@ while True:
         y=int(y)
         break
 print(f"x/y ning qiymat {x/y} ga teng")
+
+
+"""
+
+"""
