@@ -5,7 +5,6 @@ from uzwords import words
 def get_word():
     word = random.choice(words)
     while "-" in word or " " in word:
-        print("8-worked")
         word = random.choice(words)
     return word.upper()
 
