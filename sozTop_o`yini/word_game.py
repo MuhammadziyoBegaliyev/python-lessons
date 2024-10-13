@@ -1,3 +1,5 @@
+from pywebio.input import input
+from pywebio.output import put_text
 import random
 from uzwords import words
 
@@ -29,22 +31,22 @@ def play():
     word = get_word() 
     word_letters = set(word)
     user_letters = ""   
-    print(f"Men {len(word)} xonali so`z o`yladim . Topa olasizmi ?")
+    put_text(f"Men {len(word)} xonali so`z o`yladim . Topa olasizmi ?")
     while len(word_letters)>0:
-        print(display(user_letters,word))
+        put_text(display(user_letters,word))
         if len(user_letters)>0:
-            print(f"Shu vaqtgacha kiritilgan so`zlar royhati :{user_letters}")
+            put_text(f"Shu vaqtgacha kiritilgan so`zlar royhati :{user_letters}")
         letter = input("Xarf kiriting :").upper()
         if letter in user_letters:
-            print("Bu xarfni avval kiritgansiz !")
+            put_text("Bu xarfni avval kiritgansiz !")
             continue
         elif letter in word:
             word_letters.remove(letter)
-            print(f"{letter} harfi tog`ri .")
+            put_text(f"{letter} harfi tog`ri .")
         else :
-            print("Bunday harf yo`q.")
+            put_text("Bunday harf yo`q.")
         user_letters += letter
-    print(f"Tabriklayman! {word}so`zini {len(user_letters)} - ta urunishda to`pladingiz.")
+    put_text(f"Tabriklayman! {word}so`zini {len(user_letters)} - ta urunishda to`pladingiz.")
 
 
 
