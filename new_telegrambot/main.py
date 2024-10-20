@@ -34,8 +34,11 @@ def main(message):
 
 @bot.message_handler()
 def info(message):
-    if message.text.lower() == "salom":
-        bot.send_message(message.chat.id, f"Salom, {message.from_user.first_name} {message.from_user.last_name}")
+    if message.text.lower() == "salom" :
+        if {message.from_user.last_name} == None:
+            bot.send_message(message.chat.id, f"Salom, {message.from_user.first_name} {message.from_user.last_name}")
+        else:
+            bot.send_message(message.chat.id, f"Salom, {message.from_user.first_name}")
     elif message.text.lower() == 'id':
         bot.reply_to(message, f'ID: {message.from_user.id}')
 

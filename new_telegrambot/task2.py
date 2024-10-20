@@ -19,4 +19,3 @@ def callback_message(callback) :
     elif callback.data == 'edit':
         bot.edit_message_text('Edit text', callback.message.chat.id, callback.message.message_id)
 
-bot.polling(none_stop=True)
