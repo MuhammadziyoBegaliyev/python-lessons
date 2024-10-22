@@ -3,9 +3,9 @@ from aiogram.filters.command import Command
 import asyncio
 import requests
 
-TOKEN = "7843936213:AAERyf2jk-oAypnim4bIqMB3Kch5agz-_pQ"
-bot= Bot(TOKEN)
-dp = Dispatcher()
+# # TOKEN = "7843936213:AAERyf2jk-oAypnim4bIqMB3Kch5agz-_pQ"
+# bot= Bot(TOKEN)
+# dp = Dispatcher()
 
 
 @dp.message(Command('start'))
