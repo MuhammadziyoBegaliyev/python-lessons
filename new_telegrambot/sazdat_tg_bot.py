@@ -1,11 +1,11 @@
-# from tok import  key, apiKey 
+from tok import  key, apiKey 
 from aiogram import Bot, Dispatcher, executor, types
 import requests
 import json
 
         
-bot = Bot('7919107569:AAFhxTZuLhmW7iFLIKwKbxznm28Vy-XCPno')
-dp = Dispatcher(bot)
+# key = Bot('7919107569:AAFhxTZuLhmW7iFLIKwKbxznm28Vy-XCPno')
+# dp = Dispatcher(key)
 
 @dp.message_handler(commands=['start'])
 async def info(message:types.Message):
@@ -46,7 +46,7 @@ async def callback(call):
 @dp.message_handler(content_types=['text'])
 async def reply(message:types.Message):
     city = message.text.lower().strip()
-    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metri'
+    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}'
     res = requests.get(url)
     data = json.loads(res.text)
     if res.status_code==200:
