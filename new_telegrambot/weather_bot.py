@@ -18,8 +18,8 @@ def get_weather(message):
     temp = data["main"]["temp"]
     bot.reply_to(message, f'Hozirgi ob-havo: {temp}')
 
-    image = 'image.png' if temp >5.0 else 'image copy.png'
-    file = open('./.'+image, 'rb')
-    bot.send_photo(message.chat.id, file)
+    # image = 'image.png' if temp >5.0 else 'image copy.png'
+    # file = open('./.'+image, 'rb')
+    # bot.send_photo(message.chat.id, file)
 
 bot.polling(none_stop=True)
